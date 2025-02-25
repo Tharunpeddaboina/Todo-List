@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #28a745;
+}
+
+/* Add Button */
+button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    padding: 12px;
+    background: #fff;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* Delete Button */
+.delete {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    background: #c82333;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode input {
+    background: #444;
+    color: white;
+    border: 2px solid #666;
+}
+
+.dark-mode li {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .delete {
+    background: #ff4757;
+}
+
+.dark-mode .delete:hover {
+    background: #ff6b81;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    margin-top: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: #0056b3;
+}
